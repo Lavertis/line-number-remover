@@ -10,7 +10,7 @@ def process_text(text):
     lines = text.split('\n')
     text = ""
     for line in lines:
-        text += line.lstrip(string.digits).strip(' ') + '\n'
+        text += line.lstrip(string.digits + '.').strip(' ') + '\n'
     text.rstrip('\n')
     return text
 
